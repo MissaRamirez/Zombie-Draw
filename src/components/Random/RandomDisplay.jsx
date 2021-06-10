@@ -136,8 +136,8 @@ export default class App extends Component {
     return (
       <div>
         <div>
-          <Card id="card" Display={card} bg={bg} Random={getRandom} />
-          <button id="generate" type="submit" onClick={addAbom} disabled={!card.name}>Draw Abomination</button>
+          <Card Display={card} bg={bg} Random={getRandom} />
+          <button onClick={addAbom} disabled={!card.name}>Draw Abomination</button>
         </div>
       </div>
     );

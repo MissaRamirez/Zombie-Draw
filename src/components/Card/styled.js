@@ -290,11 +290,11 @@ export const DangerWrapper = styled.div`
 `;
 export const SpawnDanger = styled.div`
   font-family: 'SCRATCHED';
-  font-size: 7vh;
+  font-size: 6vh;
   display: flex;
   align-items: center;
   height: 23%;
-  padding: 0 0 0 4vw;
+  padding: 0 0 0 3vw;
   @media (orientation: landscape) {
     padding:0px 0px 0px 2vh;
   }

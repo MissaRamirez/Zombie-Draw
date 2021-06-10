@@ -14,8 +14,8 @@ const Card = props => {
 				{Display.name==null?
 						null
 						:<Fragment>
-							<CardHeaderName cardType={Display.cardType} id="name">{Display.name}</CardHeaderName>
-							<CardHeaderUnder cardType={Display.cardType} id="" ></CardHeaderUnder>
+							<CardHeaderName cardType={Display.cardType}>{Display.name}</CardHeaderName>
+							<CardHeaderUnder cardType={Display.cardType}></CardHeaderUnder>
 						</Fragment>
 				}
 				<DangerWrapper>
