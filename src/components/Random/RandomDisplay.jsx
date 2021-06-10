@@ -67,16 +67,13 @@ export default class App extends Component {
     const { min, max, available, usedData, allData, limit, bg } = this.state;
     var nextValue = generateNumber(min, max);
     var detail = available[nextValue]["id"];
-    console.log(available[nextValue]["id"], available);
     var used = [];
     used[Object.keys(usedData).length] = available[nextValue]["id"];
 
-    console.log(available);
-    var availableTmp = available;
+    var availableTmp = Object.create(available);
     availableTmp.splice(nextValue, 1);
-    console.log(allData[detail]);
 
-    var cardData = allData[detail];
+    var cardData = allData.find(id => id.id == detail);
     var nextAbom = null;
     if (bg > 1 || bg == null) {
       this.setState({
@@ -136,8 +133,8 @@ export default class App extends Component {
     return (
       <div>
         <div>
-          <Card Display={card} bg={bg} Random={getRandom} />
-          <button onClick={addAbom} disabled={!card.name}>Draw Abomination</button>
+          <Card id="card" Display={card} bg={bg} Random={getRandom} />
+          <button id="generate" type="submit" onClick={addAbom} disabled={!card.name}>Draw Abomination</button>
         </div>
       </div>
     );
