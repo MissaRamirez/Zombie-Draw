@@ -1,7 +1,7 @@
 {
   "name": "zombie-draw",
   "version": "0.1.0",
-  "homepages": "http://MissaRamirez.github.io/Zombie-Draw/",
+  "homepages": "https://missaramirez.github.io/Zombie-Draw/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
