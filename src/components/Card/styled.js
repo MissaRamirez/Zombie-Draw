@@ -65,9 +65,14 @@ import D4 from '../../images/DangerRed.png';
     BGBack
   });
   background-repeat: no-repeat;
+  background-position: center;
   margin: auto;
   width: 82vw;
   height: 126vw;
+  @media (orientation: landscape) {
+    width: 49vh;
+    height: 85vh; 
+  }
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -272,45 +277,9 @@ export const MonStyle = styled.div`
 
 export const CardBody = styled.div`
   position:relative;
-  padding-top: 10%;
+  padding-top: 5vh;
 `;
 
-export const SpawnNumber = styled.div`
-  padding: 0 0 0 4vw;
-  font-family: 'SCRATCHED';
-  background-size: cover;
-  position: absolute;
-  right: 0;
-  font-size: 5vh;
-  height: 7vh;
-  width: 28%;
-  display: flex;
-  align-items: center;
-  top:
-    ${props =>
-      (props.DangerC === 'Blue' && '30%') ||
-      (props.DangerC === 'Yellow' && '45%') || 
-      (props.DangerC === 'Orange' && '60%') ||
-      (props.DangerC === 'Red' && '75%') ||
-      '0vw'
-    };
-  background-image: url(
-    ${props =>
-      (props.DangerC === 'Blue' && D1) ||
-      (props.DangerC === 'Yellow' && D2) || 
-      (props.DangerC === 'Orange' && D3) ||
-      (props.DangerC === 'Red' && D4)
-    });
-  background-color:
-    ${props =>
-      (props.DangerC === 'Blue' && 'Blue') ||
-      (props.DangerC === 'Yellow' && 'Yellow') || 
-      (props.DangerC === 'Orange' && 'Orange') ||
-      (props.DangerC === 'Red' && 'Red') ||
-      'green'
-    };
-  z-index: 5;
-`;
 export const DangerWrapper = styled.div`
   display: flex;
   width: 30%;
@@ -326,6 +295,9 @@ export const SpawnDanger = styled.div`
   align-items: center;
   height: 23%;
   padding: 0 0 0 4vw;
+  @media (orientation: landscape) {
+    padding:0px 0px 0px 2vh;
+  }
   margin-top:    ${props =>
     (props.DangerC === 'Red' && '0') ||
     'auto'
@@ -348,22 +320,29 @@ export const CardHeaderName = styled.div`
   ${props =>
     (props.cardType === 'Modern'  &&
       'background-color: #1c1c1c;'+
-      'color: #f9f9f9;'
+      'color: #f9f9f9;'+
+      'box-shadow: 0px 5px 0px 0px #1c1c1c;'
     ) ||
     (props.cardType === 'Modern2'  &&
       'background-color: #f4d500;'+
-      'color: #1c1c1c;'
+      'color: #1c1c1c;'+
+      'box-shadow: 0px 5px 0px 0px #f4d500;'
     ) ||
     (props.cardType === 'Modern3'  &&
       'background-color: #e12727;'+
-      'color: #f9f9f9;'
+      'color: #f9f9f9;'+
+      'box-shadow: 0px 5px 0px 0px #e12727;'
     ) ||
     'background-color: #fff;'+
-    'color: #f9f9f9;'
+    'color: #f9f9f9;'+
+    'box-shadow: 0px 5px 0px 0px #fff;'
   }
   padding: 2vh 0px 1vh 4vw;
-  box-shadow: 0px 5px 0px 0px #1c1c1c;
   font-size: 27px;
+  @media (orientation: landscape) {
+    padding: 2vh 0px 1vh 1vw;
+    font-size: 36px;
+  }
 `;
 
 export const CardHeaderUnder = styled.div`
