@@ -50,7 +50,11 @@ import D1 from '../../images/DangerBlue.png';
 import D2 from '../../images/DangerYellow.png';
 import D3 from '../../images/DangerOrange.png';
 import D4 from '../../images/DangerRed.png';
-
+export const CardBody = styled.div`
+  position:relative;
+  padding-top: 5vh;
+  margin: auto;
+`;
 
  export const BGStyle = styled.div`
   border-radius: 2vh;
@@ -273,11 +277,6 @@ export const MonStyle = styled.div`
       "background-image:none"+
       "left: 0px;"
     }
-`;
-
-export const CardBody = styled.div`
-  position:relative;
-  padding-top: 5vh;
 `;
 
 export const DangerWrapper = styled.div`

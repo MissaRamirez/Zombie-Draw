@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "../Card";
-
+import { FrameContainer, Button } from './styled';
 const data = require('../../common/data');
 
 export default class App extends Component {
@@ -14,7 +14,6 @@ export default class App extends Component {
       number: "default",
       card: { id: null },
       allData: data.data,
-      usedData: {},
       available: data.data,
       abomData: data.dataAbom,
       abomination: null,
@@ -36,15 +35,8 @@ export default class App extends Component {
   generateAbom = () => {
     const { abomData } = this.state;
     const { generateNumber } = this;
-    var abom = generateNumber(0, (Object.keys(abomData).length - 1));
-    return (abomData[abom])
-  }
-
-  addAbom = () => {
-    const { generateAbom } = this;
-    var nextAbom = generateAbom();
-    var Abom =
-    {
+    var nextAbom = generateNumber(0, (Object.keys(abomData).length - 1));
+    var Abom = {
       bg: "2",
       cardType: "Modern",
       dBlue: 1,
@@ -52,8 +44,8 @@ export default class App extends Component {
       dRed: 1,
       dYellow: 1,
       id: "0",
-      img: nextAbom.img,
-      name: nextAbom.name
+      img: abomData[nextAbom].img,
+      name: abomData[nextAbom].name
     };
     this.setState({
       card: Abom
@@ -61,20 +53,14 @@ export default class App extends Component {
     return
   }
 
-
   getRandom = () => {
     const { generateNumber, generateAbom } = this;
-    const { min, max, available, usedData, allData, limit, bg } = this.state;
+    const { min, max, available, allData, limit, bg } = this.state;
     var nextValue = generateNumber(min, max);
     var detail = available[nextValue]["id"];
-    var used = [];
-    used[Object.keys(usedData).length] = available[nextValue]["id"];
-
     var availableTmp = Object.create(available);
     availableTmp.splice(nextValue, 1);
-
-    var cardData = allData.find(id => id.id == detail);
-    var nextAbom = null;
+    var cardData = allData.find(id => id.id === detail);
     if (bg > 1 || bg == null) {
       this.setState({
         bg: 0
@@ -86,21 +72,7 @@ export default class App extends Component {
       });
     }
     if (cardData.name === "ABOMINATION") {
-      nextAbom = generateAbom();
-      var Abom = {
-        bg: "2",
-        cardType: "Modern",
-        dBlue: 1,
-        dOrange: 1,
-        dRed: 1,
-        dYellow: 1,
-        id: "0",
-        img: nextAbom.img,
-        name: nextAbom.name
-      };
-      this.setState({
-        card: Abom
-      });
+      generateAbom();
     }
     else {
       this.setState({
@@ -113,7 +85,6 @@ export default class App extends Component {
       this.setState({
         number: detail,
         max: limit,
-        usedData: { ...usedData, ...used },
         available: [...indepentant]
       });
     }
@@ -121,7 +92,6 @@ export default class App extends Component {
       this.setState({
         number: detail,
         max: max - 1,
-        usedData: { ...usedData, ...used },
         available: availableTmp
       });
     }
@@ -129,13 +99,13 @@ export default class App extends Component {
 
   render() {
     const { card, bg } = this.state;
-    const { getRandom, addAbom } = this;
+    const { getRandom, generateAbom } = this;
     return (
       <div>
-        <div>
+        <FrameContainer>
           <Card id="card" Display={card} bg={bg} Random={getRandom} />
-          <button id="generate" type="submit" onClick={addAbom} disabled={!card.name}>Draw Abomination</button>
-        </div>
+          <Button id="generate" type="submit" onClick={generateAbom} disabled={!card.name}>Draw Abomination</Button>
+        </FrameContainer>
       </div>
     );
   }
