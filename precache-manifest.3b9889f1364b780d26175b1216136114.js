@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52d1b989041107f9573bf33867a0a3fd",
+    "revision": "3897aa2c019344dec3f214c5421961a0",
     "url": "/Zombie-Draw/index.html"
   },
   {
-    "revision": "5092151aae85990b07fe",
+    "revision": "f9f65a3cb87b5a191de9",
     "url": "/Zombie-Draw/static/css/main.cd65636c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Zombie-Draw/static/js/2.45d35358.chunk.js.LICENSE"
   },
   {
-    "revision": "5092151aae85990b07fe",
-    "url": "/Zombie-Draw/static/js/main.b9928f24.chunk.js"
+    "revision": "f9f65a3cb87b5a191de9",
+    "url": "/Zombie-Draw/static/js/main.f9d55146.chunk.js"
   },
   {
     "revision": "8b4208fb4ea357c24806",
@@ -78,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "46df52d9dbd5ee192d834ce5e6e7a9ca",
     "url": "/Zombie-Draw/static/media/Cracked.46df52d9.ttf"
+  },
+  {
+    "revision": "eedf540c8bd1d6a37d8db7db4dedeb34",
+    "url": "/Zombie-Draw/static/media/DangerOrange2.eedf540c.png"
   },
   {
     "revision": "d69c5969f69d49c975a7822746f18d13",
