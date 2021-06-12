@@ -76,14 +76,13 @@ export default class App extends Component {
     }
     if (cardData.name === "ABOMINATION") {
       cardData = generateAbom();
-      nextBackground = 1;
+      nextBackground = 3;
     }
     if (max === 0) {
-      var indepentant = Object.create(allData);
       this.setState({
         number: detail,
         max: limit,
-        available: [...indepentant],
+        available: [...allData],
         bg: nextBackground,
         card: cardData
       });

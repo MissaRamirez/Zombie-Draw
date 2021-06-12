@@ -8,14 +8,15 @@ import ModernTop from '../../images/ModernTop.png';
 import ModernTop2 from '../../images/ModernTop2.png';
 import ModernTop3 from '../../images/ModernTop3.png';
 
-import abomination from '../../images/abomination.png';
 import walker from '../../images/walker.png';
 import runner from '../../images/runner.png';
 import fatty from '../../images/fatty.png';
+import abomination from '../../images/abomination.png';
 
 import toxicWalker from '../../images/toxicWalker.png';
 import toxicRunner from '../../images/toxicRunner.png';
 import toxicFatty from '../../images/toxicFatty.png';
+import TOXICABOMINATION from '../../images/TOXICABOMINATION.png';
 
 import berserkerWalker from '../../images/berserkerWalker.png';
 import berserkerRunner from '../../images/berserkerRunner.png';
@@ -25,38 +26,40 @@ import berserkerAbomination from '../../images/berserkerAbomination.png';
 import skinnerWalker from '../../images/skinnerWalker.png';
 import skinnerRunner from '../../images/skinnerRunner.png';
 import skinnerFatty from '../../images/skinnerFatty.png';
+import AllMIGHTO from '../../images/AllMIGHTO.png';
 
 import zombieWolf from '../../images/zombieWolf.png';
 import BLACKDOG from '../../images/blackDog.png';
-import actualCannibal from '../../images/actualCannibal.png';
-import GEENWICHCREW from '../../images/GEENWICHCREW.png';
-import BIGFOOT from '../../images/BIGFOOT.png';
-import BEARMANBOAR from '../../images/BEARMANBOAR.png';
-import AllMIGHTO from '../../images/AllMIGHTO.png';
-import MUMMY from '../../images/MUMMY.png';
-import LANKYMAN from '../../images/LANKYMAN.png';
-import TOXICABOMINATION from '../../images/TOXICABOMINATION.png';
-import HOBOMINATION from '../../images/HOBOMINATION.png';
-import ABOMINACOP from '../../images/ABOMINACOP.png';
-import PATIENT0 from '../../images/PATIENT0.png';
-import ABOMINAWILD from '../../images/ABOMINAWILD.png';
-import BATABOMINATION from '../../images/BATABOMINATION.png';
-import CTHULHU from '../../images/CTHULHU.png';
 
 import seekerZombie from '../../images/seekerZombie.png';
 import soilderZombie from '../../images/soilderZombie.png';
 import moreFatty from '../../images/moreFatty.png';
 
-import D1 from '../../images/DangerBlue.png';
-import D2 from '../../images/DangerYellow.png';
-import D3 from '../../images/DangerOrange.png';
-import D4 from '../../images/DangerRed.png';
+import ABOMINAWILD from '../../images/ABOMINAWILD.png';
+import HOBOMINATION from '../../images/HOBOMINATION.png';
+import ABOMINACOP from '../../images/ABOMINACOP.png';
+import PATIENT0 from '../../images/PATIENT0.png';
+
+import actualCannibal from '../../images/actualCannibal.png';
+import BATABOMINATION from '../../images/BATABOMINATION.png';
+import BEARMANBOAR from '../../images/BEARMANBOAR.png';
+import BIGFOOT from '../../images/BIGFOOT.png';
+import CTHULHU from '../../images/CTHULHU.png';
+import GEENWICHCREW from '../../images/GEENWICHCREW.png';
+import LANKYMAN from '../../images/LANKYMAN.png';
+import MUMMY from '../../images/MUMMY.png';
+
+import D1 from '../../images/DangerBlue2.png';
+import D2 from '../../images/DangerYellow2.png';
+import D3 from '../../images/DangerOrange2.png';
+import D4 from '../../images/DangerRed2.png';
 
 export const CardBody = styled.div`
   position:relative;
   padding-top: 5vh;
   margin: auto;
   flex:1;
+  user-select: none; 
 `;
 
  export const BGStyle = styled.div`
@@ -85,7 +88,7 @@ export const CardBody = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: ${props => props.backGround ? "black" : "green"};
+  color: "black";
   position: relative;
   display:table;
   overflow: hidden;
@@ -293,17 +296,18 @@ export const MonStyle = styled.div`
 export const DangerWrapper = styled.div`
   display: flex;
   width: 30%;
-  height: 49%;
-  margin-top: 26%;
+  height: 50%;
+  margin-top: 20%;
   margin-left: auto;
   flex-direction: column;
 `;
+
 export const SpawnDanger = styled.div`
   font-family: 'SCRATCHED';
   font-size: 6vh;
   display: flex;
   align-items: center;
-  height: 23%;
+  height: 22%;
   padding: 0 0 0 3vw;
   @media (orientation: landscape) {
     padding:0px 0px 0px 2vh;
@@ -343,9 +347,7 @@ export const CardHeaderName = styled.div`
       'color: #f9f9f9;'+
       'box-shadow: 0px 5px 0px 0px #e12727;'
     ) ||
-    'background-color: #fff;'+
-    'color: #f9f9f9;'+
-    'box-shadow: 0px 5px 0px 0px #fff;'
+    ''
   }
   padding: 2vh 0px 1vh 4vw;
   font-size: 27px;
