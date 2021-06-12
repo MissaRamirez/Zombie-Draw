@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import BG from '../../images/BG.png';
+import BG0 from '../../images/BG0.png';
 import BG1 from '../../images/BG1.png';
 import BG2 from '../../images/BG2.png';
+import BG3 from '../../images/BG3.png';
 import BGBack from '../../images/BGBack.png';
 import ModernTop from '../../images/ModernTop.png';
 import ModernTop2 from '../../images/ModernTop2.png';
@@ -50,10 +51,12 @@ import D1 from '../../images/DangerBlue.png';
 import D2 from '../../images/DangerYellow.png';
 import D3 from '../../images/DangerOrange.png';
 import D4 from '../../images/DangerRed.png';
+
 export const CardBody = styled.div`
   position:relative;
   padding-top: 5vh;
   margin: auto;
+  flex:1;
 `;
 
  export const BGStyle = styled.div`
@@ -63,9 +66,10 @@ export const CardBody = styled.div`
   border-color: white;
   background-image: url(
   ${props =>
-    (props.backGround === '0' && BG) ||
+    (props.backGround === '0' && BG0) ||
     (props.backGround === '1' && BG1) || 
     (props.backGround === '2' && BG2) ||
+    (props.backGround === '3' && BG3) ||
     BGBack
   });
   background-repeat: no-repeat;
@@ -184,13 +188,16 @@ export const MonStyle = styled.div`
       ) ||
       (props.monster === 'actualCannibal' &&
         "background-image: url("+actualCannibal+");"+
-        "left: -4%;"+
-        "bottom: -18%;"
+        "height: 64%;"+
+        "right: -46px;"+
+        "left: -5%;"+
+        "bottom: 6%;"
       ) ||
       (props.monster === 'BLACKDOG' &&
         "background-image: url("+BLACKDOG+");"+
-        "left: -4%;"+
-        "bottom: -18%;"
+        "right: -35px;"+
+        "left: -5%;"+
+        "bottom: -13%;"
       ) ||
       (props.monster === 'GEENWICHCREW' &&
         "background-image: url("+GEENWICHCREW+");"+
@@ -234,13 +241,15 @@ export const MonStyle = styled.div`
       ) ||
       (props.monster === 'HOBOMINATION' &&
         "background-image: url("+HOBOMINATION+");"+
+        "height: 121%;"+
         "left:-27%;"+
-        "bottom:-18%;"
+        "bottom:-25%;"
       ) ||
       (props.monster === 'ABOMINACOP' &&
         "background-image: url("+ABOMINACOP+");"+
-        "left:-37%;"+
-        "bottom:-18%;"
+        "height: 121%;"+
+        "left:-58%;"+
+        "bottom:-28%;"
       ) ||
       (props.monster === 'PATIENT0' &&
         "background-image: url("+PATIENT0+");"+
@@ -250,13 +259,15 @@ export const MonStyle = styled.div`
       ) ||
       (props.monster === 'ABOMINAWILD' &&
         "background-image: url("+ABOMINAWILD+");"+
-        "left:-10%;"+
-        "bottom:-18%;"
+        "height: 110%;"+
+        "right: -53px;"+
+        "left: -24%;"+
+        "bottom: -16%;"
       ) ||    
       (props.monster === 'BATABOMINATION' &&
         "background-image: url("+BATABOMINATION+");"+
         "left:-10%;"+
-        "bottom:-7%;"
+        "bottom:-13%;"
       ) ||  
       (props.monster === 'CTHULHU' &&
         "background-image: url("+CTHULHU+");"+
@@ -271,8 +282,8 @@ export const MonStyle = styled.div`
     ) ||
     (props.monster === 'moreFatty' &&
       "background-image: url("+moreFatty+");"+
-      "left: -34%;"+
-      "bottom:-17%;"
+      "left: -57%;"+
+      "bottom:-18%;"
     ) ||  
       "background-image:none"+
       "left: 0px;"
@@ -340,7 +351,7 @@ export const CardHeaderName = styled.div`
   font-size: 27px;
   @media (orientation: landscape) {
     padding: 2vh 0px 1vh 1vw;
-    font-size: 36px;
+    font-size: 6vh;
   }
 `;
 

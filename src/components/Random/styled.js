@@ -9,12 +9,22 @@ export const FrameContainer = styled.div`
     flex-direction: row;
   }
 `;
-
+export const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex:1;
+  @media (orientation: portrait) {
+    margin: 4vh 0;
+  }
+`;
 export const Button = styled.button`
   margin: auto;
-  @media (orientation: portrait) {
+  :nth-child(2){
     margin-top: 4vh;
   }
+
   color:
   ${props => props.disabled ? "#o00" : "#fff"};
   background-color:
