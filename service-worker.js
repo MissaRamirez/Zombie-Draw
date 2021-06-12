@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Zombie-Draw/precache-manifest.afec996ca60ff12514e8543a2571a967.js"
+  "/Zombie-Draw/precache-manifest.fc9118377019ad79983a79e49a5d2523.js"
 );
 
 self.addEventListener('message', (event) => {
