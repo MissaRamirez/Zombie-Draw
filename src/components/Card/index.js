@@ -3,43 +3,23 @@ import {BGStyle,MonStyle,CardBody,DangerWrapper,SpawnDanger,CardHeaderName,CardH
 
 const Card = props => {
   const {Display,Random,bg} = props;
-	var bgtemp
-	bg==null?
-		bgtemp=null:
-		bgtemp=bg.toString();
 	return(
 		<CardBody>
-			<BGStyle backGround={bgtemp} onClick={Random}>
-				<MonStyle monster={Display.img}/>
+			<BGStyle backGround={bg} onClick={Random}>
 				{Display.name==null?
-						null
-						:<Fragment>
-							<CardHeaderName cardType={Display.cardType}>{Display.name}</CardHeaderName>
-							<CardHeaderUnder cardType={Display.cardType}></CardHeaderUnder>
-						</Fragment>
-				}
-				<DangerWrapper>
-					{
-						Display.dRed==null?
-							null:
+					null
+					:<Fragment>
+						<MonStyle monster={Display.img}/>
+						<CardHeaderName cardType={Display.cardType}>{Display.name}</CardHeaderName>
+						<CardHeaderUnder cardType={Display.cardType}></CardHeaderUnder>
+						<DangerWrapper>
 							<SpawnDanger DangerC="Red">{Display.dRed}</SpawnDanger>
-					}
-					{
-						Display.dOrange==null?
-							null:
 							<SpawnDanger DangerC="Orange">{Display.dOrange}</SpawnDanger>
-					}
-					{
-						Display.dYellow==null?
-							null:
 							<SpawnDanger DangerC="Yellow">{Display.dYellow}</SpawnDanger>
-					}
-					{
-						Display.dBlue==null?
-							null:
 							<SpawnDanger DangerC="Blue">{Display.dBlue}</SpawnDanger>
-					}
-				</DangerWrapper>
+						</DangerWrapper>
+					</Fragment>
+				}
 			</BGStyle>
 		</CardBody>
 	);

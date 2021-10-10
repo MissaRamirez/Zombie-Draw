@@ -8,32 +8,32 @@ import ModernTop from '../../images/ModernTop.png';
 import ModernTop2 from '../../images/ModernTop2.png';
 import ModernTop3 from '../../images/ModernTop3.png';
 
-import walker from '../../images/walker.png';
-import runner from '../../images/runner.png';
-import fatty from '../../images/fatty.png';
-import abomination from '../../images/abomination.png';
+import walker from '../../images/modern/walker.png';
+import runner from '../../images/modern/runner.png';
+import fatty from '../../images/modern/fatty.png';
+import abomination from '../../images/modern/abomination.png';
 
-import toxicWalker from '../../images/toxicWalker.png';
-import toxicRunner from '../../images/toxicRunner.png';
-import toxicFatty from '../../images/toxicFatty.png';
-import TOXICABOMINATION from '../../images/TOXICABOMINATION.png';
+import toxicWalker from '../../images/modern/toxicWalker.png';
+import toxicRunner from '../../images/modern/toxicRunner.png';
+import toxicFatty from '../../images/modern/toxicFatty.png';
+import TOXICABOMINATION from '../../images/modern/TOXICABOMINATION.png';
 
-import berserkerWalker from '../../images/berserkerWalker.png';
-import berserkerRunner from '../../images/berserkerRunner.png';
-import berserkerFatty from '../../images/berserkerFatty.png';
-import berserkerAbomination from '../../images/berserkerAbomination.png';
+import berserkerWalker from '../../images/modern/berserkerWalker.png';
+import berserkerRunner from '../../images/modern/berserkerRunner.png';
+import berserkerFatty from '../../images/modern/berserkerFatty.png';
+import berserkerAbomination from '../../images/modern/berserkerAbomination.png';
 
-import skinnerWalker from '../../images/skinnerWalker.png';
-import skinnerRunner from '../../images/skinnerRunner.png';
-import skinnerFatty from '../../images/skinnerFatty.png';
-import AllMIGHTO from '../../images/AllMIGHTO.png';
+import skinnerWalker from '../../images/modern/skinnerWalker.png';
+import skinnerRunner from '../../images/modern/skinnerRunner.png';
+import skinnerFatty from '../../images/modern/skinnerFatty.png';
+import AllMIGHTO from '../../images/modern/AllMIGHTO.png';
 
-import zombieWolf from '../../images/zombieWolf.png';
+import zombieWolf from '../../images/modern/zombieWolf.png';
 import BLACKDOG from '../../images/blackDog.png';
 
-import seekerZombie from '../../images/seekerZombie.png';
-import soilderZombie from '../../images/soilderZombie.png';
-import moreFatty from '../../images/moreFatty.png';
+import seekerZombie from '../../images/modern/seekerZombie.png';
+import soilderZombie from '../../images/modern/soilderZombie.png';
+import heavyFatty from '../../images/modern/heavyFatty.png';
 
 import ABOMINAWILD from '../../images/ABOMINAWILD.png';
 import HOBOMINATION from '../../images/HOBOMINATION.png';
@@ -55,6 +55,7 @@ import D3 from '../../images/DangerOrange2.png';
 import D4 from '../../images/DangerRed2.png';
 
 export const CardBody = styled.div`
+  font-family: 'Cracked';
   position:relative;
   padding-top: 5vh;
   margin: auto;
@@ -69,10 +70,10 @@ export const CardBody = styled.div`
   border-color: white;
   background-image: url(
   ${props =>
-    (props.backGround === '0' && BG0) ||
-    (props.backGround === '1' && BG1) || 
-    (props.backGround === '2' && BG2) ||
-    (props.backGround === '3' && BG3) ||
+    (props.backGround === 0 && BG0) ||
+    (props.backGround === 1 && BG1) || 
+    (props.backGround === 2 && BG2) ||
+    (props.backGround === 3 && BG3) ||
     BGBack
   });
   background-repeat: no-repeat;
@@ -105,89 +106,62 @@ export const MonStyle = styled.div`
   margin-right: auto;
   right: 0;
   z-index: 1;
+
+  height: 85%;
+  width: 100%;
+  bottom: 0;
+  background-position: left bottom;
   ${props =>
       (props.monster === 'abomination' &&
-        "background-image: url("+abomination+");"+
-        "right:-38%;"+
-        "left:-29%;"+
-        "bottom: -14%;"
+        "background-image: url("+abomination+");"
       ) ||
       (props.monster === 'walker' && 
-        "background-image: url("+walker+");"+
-        "left: -18%;"+
-        "bottom: -13%;"
+        "background-image: url("+walker+");"
       ) ||
       (props.monster === 'fatty' &&
-        "background-image: url("+fatty+");"+
-        "left: -34%;"+
-        "bottom: -18%;"
+        "background-image: url("+fatty+");"
       ) ||
       (props.monster === 'runner' &&
-        "background-image: url("+runner+");"+
-        "left: -37%;"+
-        "bottom: -16%;"
+        "background-image: url("+runner+");"
       ) ||
       (props.monster === 'toxicWalker' &&
-        "background-image: url("+toxicWalker+");"+
-        "left: -26%;"+
-        "bottom: -17%;"
+        "background-image: url("+toxicWalker+");"
       ) ||
       (props.monster === 'toxicRunner' &&
-        "background-image: url("+toxicRunner+");"+
-        "left: -35%;"+
-        "bottom: -16%;"
+        "background-image: url("+toxicRunner+");"
       ) ||
       (props.monster === 'toxicFatty' &&
-        "background-image: url("+toxicFatty+");"+
-        "left: -27%;"+
-        "bottom: -16%;"
+        "background-image: url("+toxicFatty+");"
       ) ||
       (props.monster === 'berserkerWalker' &&
-        "background-image: url("+berserkerWalker+");"+
-        "left: -16%;"+
-        "bottom: -18%;"
+        "background-image: url("+berserkerWalker+");"
       ) ||
       (props.monster === 'berserkerRunner' &&
-        "background-image: url("+berserkerRunner+");"+
-        "left: -16%;"+
-        "bottom: -18%;"
+        "background-image: url("+berserkerRunner+");"
       ) ||
       (props.monster === 'berserkerFatty' &&
-        "background-image: url("+berserkerFatty+");"+
-        "left: -16%;"+
-        "bottom: -18%;"
+        "background-image: url("+berserkerFatty+");"
       ) ||
       (props.monster === 'berserkerAbomination' &&
         "background-image: url("+berserkerAbomination+");"+
-        "right: -54px;"+
-        "left: -10%;"+
-        "bottom: -16%;"
+        "left=0;"
       ) ||
       
       (props.monster === 'skinnerWalker' &&
-        "background-image: url("+skinnerWalker+");"+
-        "left: -30%;"+
-        "bottom: -17%;"
+        "background-image: url("+skinnerWalker+");"
       ) ||
       (props.monster === 'skinnerRunner' &&
-        "background-image: url("+skinnerRunner+");"+
-        "left: -28%;"+
-        "bottom: -17%;"
+        "background-image: url("+skinnerRunner+");"
       ) ||
       (props.monster === 'skinnerFatty' &&
-        "background-image: url("+skinnerFatty+");"+
-        "left: -28%;"+
-        "bottom: -17%;"
+        "background-image: url("+skinnerFatty+");"
       ) ||
       (props.monster === 'seekerZombie' &&
-        "background-image: url("+seekerZombie+");"+
-        "left: -17%;"+
-        "bottom: -16%;"
+        "background-image: url("+seekerZombie+");"
       ) ||
       (props.monster === 'zombieWolf' &&
         "background-image: url("+zombieWolf+");"+
-        "left: -13%;"+
-        "bottom: -16%;"
+        "background-position: right center;"
       ) ||
       (props.monster === 'actualCannibal' &&
         "background-image: url("+actualCannibal+");"+
@@ -200,47 +174,48 @@ export const MonStyle = styled.div`
         "background-image: url("+BLACKDOG+");"+
         "right: -35px;"+
         "left: -5%;"+
+        "height: 105%;"+
         "bottom: -13%;"
       ) ||
       (props.monster === 'GEENWICHCREW' &&
         "background-image: url("+GEENWICHCREW+");"+
         "right: 17%;"+
         "left: -14%;"+
+        "height: 105%;"+
         "bottom: -12%;"
       ) ||
       (props.monster === 'BIGFOOT' &&
         "background-image: url("+BIGFOOT+");"+
         "left: 0%;"+
+        "height: 105%;"+
         "bottom: -18%;"
       ) ||
       (props.monster === 'BEARMANBOAR' &&
         "background-image: url("+BEARMANBOAR+");"+
         "right: -12%;"+
         "left: -24%;"+
+        "height: 105%;"+
         "bottom: -9%;"
       ) ||
       (props.monster === 'AllMIGHTO' &&
-        "background-image: url("+AllMIGHTO+");"+
-        "left:-61%;"+
-        "bottom:-18%;"
+        "background-image: url("+AllMIGHTO+");"
+
       ) ||
       (props.monster === 'MUMMY' &&
         "background-image: url("+MUMMY+");"+
         "left:-11%;"+
         "right: -25%;"+
+        "height: 105%;"+
         "bottom:-18%;"
       ) ||
       (props.monster === 'LANKYMAN' &&
         "background-image: url("+LANKYMAN+");"+
         "left:-10%;"+
+        "height: 105%;"+
         "bottom:-18%;"
       ) ||
       (props.monster === 'TOXICABOMINATION' &&
-        "background-image: url("+TOXICABOMINATION+");"+
-        "height: 117%;"+
-        "right:-16%;"+
-        "left:-50%;"+
-        "bottom: -15%;"
+        "background-image: url("+TOXICABOMINATION+");"
       ) ||
       (props.monster === 'HOBOMINATION' &&
         "background-image: url("+HOBOMINATION+");"+
@@ -258,6 +233,7 @@ export const MonStyle = styled.div`
         "background-image: url("+PATIENT0+");"+
         "right: -26%;"+
         "left:-25%;"+
+        "height: 105%;"+
         "bottom:-18%;"
       ) ||
       (props.monster === 'ABOMINAWILD' &&
@@ -269,24 +245,22 @@ export const MonStyle = styled.div`
       ) ||    
       (props.monster === 'BATABOMINATION' &&
         "background-image: url("+BATABOMINATION+");"+
+        "height: 105%;"+
         "left:-10%;"+
         "bottom:-13%;"
       ) ||  
       (props.monster === 'CTHULHU' &&
         "background-image: url("+CTHULHU+");"+
+        "height: 105%;"+
         "left: 1%;"+
         "right: 21%;"+
         "bottom:-7%;"
       ) ||
       (props.monster === 'soilderZombie' &&
-      "background-image: url("+soilderZombie+");"+
-      "left: -15%;"+
-      "bottom:-16%;"
+      "background-image: url("+soilderZombie+");"
     ) ||
-    (props.monster === 'moreFatty' &&
-      "background-image: url("+moreFatty+");"+
-      "left: -57%;"+
-      "bottom:-18%;"
+    (props.monster === 'heavyFatty' &&
+      "background-image: url("+heavyFatty+");"
     ) ||  
       "background-image:none"+
       "left: 0px;"
@@ -330,7 +304,6 @@ export const SpawnDanger = styled.div`
 
 export const CardHeaderName = styled.div`
   border-radius: 2vh 2vh 0 0;
-  font-family: 'Cracked';
   ${props =>
     (props.cardType === 'Modern'  &&
       'background-color: #1c1c1c;'+

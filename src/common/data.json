@@ -135,15 +135,15 @@
 		{"id":"126", "name":"SOILDER ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"soilderZombie", "cardType":"Modern"},
 		{"id":"127", "name":"SOILDER ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"soilderZombie", "cardType":"Modern"},
 
-		{"id":"128", "name":"HEAVY FATTY ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"129", "name":"HEAVY FATTY ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"130", "name":"HEAVY FATTY ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"131", "name":"HEAVY FATTY ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"132", "name":"HEAVY FATTY ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"133", "name":"HEAVY FATTY ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"134", "name":"HEAVY FATTY ZOMBIE", "dBlue":3, "dYellow":5, "dOrange":7, "dRed":8, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"135", "name":"HEAVY FATTY ZOMBIE", "dBlue":3, "dYellow":5, "dOrange":7, "dRed":8, "img":"moreFatty", "cardType":"Modern"},
-		{"id":"136", "name":"HEAVY FATTY ZOMBIE", "dBlue":3, "dYellow":5, "dOrange":7, "dRed":8, "img":"moreFatty", "cardType":"Modern"}
+		{"id":"128", "name":"HEAVY FATTY ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"129", "name":"HEAVY FATTY ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"130", "name":"HEAVY FATTY ZOMBIE", "dBlue":1, "dYellow":2, "dOrange":4, "dRed":6, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"131", "name":"HEAVY FATTY ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"132", "name":"HEAVY FATTY ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"133", "name":"HEAVY FATTY ZOMBIE", "dBlue":2, "dYellow":3, "dOrange":5, "dRed":7, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"134", "name":"HEAVY FATTY ZOMBIE", "dBlue":3, "dYellow":5, "dOrange":7, "dRed":8, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"135", "name":"HEAVY FATTY ZOMBIE", "dBlue":3, "dYellow":5, "dOrange":7, "dRed":8, "img":"heavyFatty", "cardType":"Modern"},
+		{"id":"136", "name":"HEAVY FATTY ZOMBIE", "dBlue":3, "dYellow":5, "dOrange":7, "dRed":8, "img":"heavyFatty", "cardType":"Modern"}
 	],
 	"dataAbom":[
 		{"name":"ABOMINATION", "img":"abomination"},
