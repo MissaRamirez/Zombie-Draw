@@ -29,25 +29,25 @@ import skinnerFatty from '../../images/modern/skinnerFatty.png';
 import AllMIGHTO from '../../images/modern/AllMIGHTO.png';
 
 import zombieWolf from '../../images/modern/zombieWolf.png';
-import BLACKDOG from '../../images/blackDog.png';
+import BLACKDOG from '../../images/modern/blackDog.png';
 
 import seekerZombie from '../../images/modern/seekerZombie.png';
 import soilderZombie from '../../images/modern/soilderZombie.png';
 import heavyFatty from '../../images/modern/heavyFatty.png';
 
-import ABOMINAWILD from '../../images/ABOMINAWILD.png';
-import HOBOMINATION from '../../images/HOBOMINATION.png';
-import ABOMINACOP from '../../images/ABOMINACOP.png';
-import PATIENT0 from '../../images/PATIENT0.png';
+import ABOMINAWILD from '../../images/modern/abominaWild.png';
+import HOBOMINATION from '../../images/modern/hobomination.png';
+import ABOMINACOP from '../../images/modern/abominaCop.png';
+import PATIENT0 from '../../images/modern/patient0.png';
 
-import actualCannibal from '../../images/actualCannibal.png';
-import BATABOMINATION from '../../images/BATABOMINATION.png';
-import BEARMANBOAR from '../../images/BEARMANBOAR.png';
-import BIGFOOT from '../../images/BIGFOOT.png';
-import CTHULHU from '../../images/CTHULHU.png';
-import GEENWICHCREW from '../../images/GEENWICHCREW.png';
-import LANKYMAN from '../../images/LANKYMAN.png';
-import MUMMY from '../../images/MUMMY.png';
+import ACTUALCANNIBAL from '../../images/modern/actualCannibal.png';
+import BATABOMINATION from '../../images/modern/BATABOMINATION.png';
+import BEARMANBOAR from '../../images/modern/BearManBoar.png';
+import BIGFOOT from '../../images/modern/BIGFOOT.png';
+import CTHULHU from '../../images/modern/CTHULHU.png';
+import GREENWICHCREW from '../../images/modern/GreenwitchCrew.png';
+import LANKYMAN from '../../images/modern/lankyman.png';
+import MUMMY from '../../images/modern/mummy.png';
 
 import D1 from '../../images/DangerBlue2.png';
 import D2 from '../../images/DangerYellow2.png';
@@ -79,7 +79,7 @@ export const CardBody = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
-  width: 82vw;
+  width: 75vw;
   height: 126vw;
   @media (orientation: landscape) {
     width: 49vh;
@@ -146,7 +146,6 @@ export const MonStyle = styled.div`
         "background-image: url("+berserkerAbomination+");"+
         "left=0;"
       ) ||
-      
       (props.monster === 'skinnerWalker' &&
         "background-image: url("+skinnerWalker+");"
       ) ||
@@ -163,98 +162,54 @@ export const MonStyle = styled.div`
         "background-image: url("+zombieWolf+");"+
         "background-position: right center;"
       ) ||
-      (props.monster === 'actualCannibal' &&
-        "background-image: url("+actualCannibal+");"+
-        "height: 64%;"+
-        "right: -46px;"+
-        "left: -5%;"+
-        "bottom: 6%;"
+      (props.monster === 'ACTUALCANNIBAL' &&
+        "background-image: url("+ACTUALCANNIBAL+");"+
+        "background-position: right center;"
       ) ||
       (props.monster === 'BLACKDOG' &&
         "background-image: url("+BLACKDOG+");"+
-        "right: -35px;"+
-        "left: -5%;"+
-        "height: 105%;"+
-        "bottom: -13%;"
+        "background-position: right center;"
       ) ||
-      (props.monster === 'GEENWICHCREW' &&
-        "background-image: url("+GEENWICHCREW+");"+
-        "right: 17%;"+
-        "left: -14%;"+
-        "height: 105%;"+
-        "bottom: -12%;"
+      (props.monster === 'GREENWICHCREW' &&
+        "background-image: url("+GREENWICHCREW+");"
       ) ||
       (props.monster === 'BIGFOOT' &&
-        "background-image: url("+BIGFOOT+");"+
-        "left: 0%;"+
-        "height: 105%;"+
-        "bottom: -18%;"
+        "background-image: url("+BIGFOOT+");"
       ) ||
       (props.monster === 'BEARMANBOAR' &&
-        "background-image: url("+BEARMANBOAR+");"+
-        "right: -12%;"+
-        "left: -24%;"+
-        "height: 105%;"+
-        "bottom: -9%;"
+        "background-image: url("+BEARMANBOAR+");"
       ) ||
       (props.monster === 'AllMIGHTO' &&
         "background-image: url("+AllMIGHTO+");"
 
       ) ||
       (props.monster === 'MUMMY' &&
-        "background-image: url("+MUMMY+");"+
-        "left:-11%;"+
-        "right: -25%;"+
-        "height: 105%;"+
-        "bottom:-18%;"
+        "background-image: url("+MUMMY+");"
       ) ||
       (props.monster === 'LANKYMAN' &&
-        "background-image: url("+LANKYMAN+");"+
-        "left:-10%;"+
-        "height: 105%;"+
-        "bottom:-18%;"
+        "background-image: url("+LANKYMAN+");"
       ) ||
       (props.monster === 'TOXICABOMINATION' &&
         "background-image: url("+TOXICABOMINATION+");"
       ) ||
       (props.monster === 'HOBOMINATION' &&
-        "background-image: url("+HOBOMINATION+");"+
-        "height: 121%;"+
-        "left:-27%;"+
-        "bottom:-25%;"
+        "background-image: url("+HOBOMINATION+");"
       ) ||
       (props.monster === 'ABOMINACOP' &&
-        "background-image: url("+ABOMINACOP+");"+
-        "height: 121%;"+
-        "left:-58%;"+
-        "bottom:-28%;"
+        "background-image: url("+ABOMINACOP+");"
       ) ||
       (props.monster === 'PATIENT0' &&
-        "background-image: url("+PATIENT0+");"+
-        "right: -26%;"+
-        "left:-25%;"+
-        "height: 105%;"+
-        "bottom:-18%;"
+        "background-image: url("+PATIENT0+");"
       ) ||
       (props.monster === 'ABOMINAWILD' &&
-        "background-image: url("+ABOMINAWILD+");"+
-        "height: 110%;"+
-        "right: -53px;"+
-        "left: -24%;"+
-        "bottom: -16%;"
+        "background-image: url("+ABOMINAWILD+");"
       ) ||    
       (props.monster === 'BATABOMINATION' &&
-        "background-image: url("+BATABOMINATION+");"+
-        "height: 105%;"+
-        "left:-10%;"+
-        "bottom:-13%;"
+        "background-image: url("+BATABOMINATION+");"
       ) ||  
       (props.monster === 'CTHULHU' &&
         "background-image: url("+CTHULHU+");"+
-        "height: 105%;"+
-        "left: 1%;"+
-        "right: 21%;"+
-        "bottom:-7%;"
+        "background-position: right center;"
       ) ||
       (props.monster === 'soilderZombie' &&
       "background-image: url("+soilderZombie+");"
